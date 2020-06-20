@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying 
+# This script is displaying files in current directory
 for file in *
 do
     echo "$file" | cut -d'-' -f2-
