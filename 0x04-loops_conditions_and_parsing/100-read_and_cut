@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying files in current directory
+# This script is displaying specific fields of a certain file
 while read -r file
 do
     echo "$file" | cut -d ':' -f1,3,6
