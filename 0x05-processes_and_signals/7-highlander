@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script kills a process of an infinite loop and displays 'invincible string'
+
+trap "echo 'I am invincible!!!'" SIGTERM 
+while :
+do
+    echo 'To infinity and beyond'
+    sleep 2  
+done
