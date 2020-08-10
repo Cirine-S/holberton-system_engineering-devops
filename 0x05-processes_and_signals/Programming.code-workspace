@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../holbertonschool-higher_level_programming"
+		},
+		{
+			"path": "../../holbertonschool-low_level_programming"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../sorting_algorithms"
+		}
+	]
+}

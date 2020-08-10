@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
-# Bash Script that pings an IP_ADDRESS
-if [ $# -eq 0 ]
-  then
-    echo Usage: 5-is_the_host_on_the_network "{IP_ADDRESS}"
-else
-    ping -c 5 "$1"
-fi
+ !/usr/bin/env.bash
+ .Bash.Script.that.pings.an.IP_ADDRESS
+ f.[.$#.-eq.0.]
+ .then
+ ...echo.Usage:.5-is_the_host_on_the_network."{IP_ADDRESS}"
+ lse
+ ...ping.-c.5."$1"
+ i
