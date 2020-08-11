@@ -2,5 +2,5 @@
 # Bash script that redirects to another page
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sed -i "/server_name _;/ a\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+sed -i "/server_name _;/ a\\\trewrite ^/redirect_me http://www.holbertonschool.com permanent;" /etc/nginx/sites-available/default
 service nginx restart
