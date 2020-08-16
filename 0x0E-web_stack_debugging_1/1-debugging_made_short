@@ -2,3 +2,4 @@
 # Using what you did for task #0, fix short and sweet.
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 service nginx restart
+pkill -o nginx
