@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash Script that redirects to another page
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo chmod 777 /var/www/html/*
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+sudo sed -i '30 i error_page 404 /404.html;\nlocation = /404.html {root /var/www/html;internal;}' /etc/nginx/sites-available/default
+sudo service nginx restart
