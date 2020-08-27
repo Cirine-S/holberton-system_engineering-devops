@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Bash Script to run as a privileged user
+su $1
+whoami
