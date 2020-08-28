@@ -1,6 +1,7 @@
-#!/usr/bin/env bash
-# Bash Script to run nginx as nginx
-chmod 777 /etc/nginx/nginx.conf
-pkill apache
-sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+ #!/usr/bin/env bash
+# Bash script that runs nginx as nginx
+sudo pkill apache2
+sudo chown nginx:nginx /etc/nginx/nginx.conf 
+sudo chmod 777 /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
