@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Bash Script to run nginx as nginx
+#Nginx is running as the nginx user.
 chmod 777 /etc/nginx/nginx.conf
 pkill apache2
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
