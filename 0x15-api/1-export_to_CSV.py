@@ -11,7 +11,7 @@ def to_csv(empl_id):
 
     employee_name = requests.get(
         'https://jsonplaceholder.typicode.com/users/' + empl_id).json()
-    employee_name = employee_name['name']
+    employee_name = employee_name['username']
 
     info = requests.get(
         'https://jsonplaceholder.typicode.com/todos?userId=' + empl_id).json()
