@@ -15,15 +15,15 @@ def to_csv(employee_id):
     info = requests.get(
         'https://jsonplaceholder.typicode.com/todos?userId=' + employee_id).json()
 
-    js = {employee_id: [{
+    with open('{}.csv'.format(employee_id), 'w') as csv_file:
+        writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         for task in info:
-                    "task": task.get("title"),
-                    "completed": task.get("completed"),
-                    "username": employee_name
-                    } for task in info]}
-    # write json
-    with open('{}.json'.format(_id), 'w') as json_file:
-        json_file.write(json.dumps(j_output))
+            writer.writerow([
+                employee_id,
+                employee_name,
+                task.get('completed'),
+                task.get('title')
+                ])
 
 
 if __name__ == '__main__':
