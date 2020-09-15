@@ -23,8 +23,8 @@ def todolist_progress(emp_id):
             done_tasks += 1
         total_tasks += 1
     print(
-        'Employee ' + employee_name + 'is done with tasks(\
-        ' + str(done_tasks) + '/' + str(total_tasks) + '):')
+        'Employee ' + employee_name + 'is done with tasks(' +
+        str(done_tasks) + '/' + str(total_tasks) + '):')
     for title in titles:
         print('\t ' + title)
 
