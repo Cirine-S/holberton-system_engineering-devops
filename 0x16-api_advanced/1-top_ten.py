@@ -7,7 +7,7 @@ import requests
 
 def top_ten(subreddit):
     """ function top_ten"""
-    header = {'User-agent': 'Holberton_school'}
+    header = {'User-agent': 'use'}
     req = requests.get(
         'https://www.reddit.com/r/{}/hot.json'.format(subreddit),
         headers=header, allow_redirects=False).json()
