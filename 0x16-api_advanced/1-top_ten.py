@@ -7,13 +7,13 @@ import requests
 
 def top_ten(subreddit):
     """ function top_ten"""
-    header = {'User-agent': 'use'}
-    req = requests.get(
-        'https://www.reddit.com/r/{}/hot.json'.format(subreddit),
-        headers=header, allow_redirects=False).json()
+    header = {'User-agent': 'Cirine'}
+    url = 'https://www.reddit.com/r/' + subreddit + '/hot.json'
+
+    r = requests.get(url, headers=header, allow_redirects=False).json()
     try:
         for i in range(10):
-            path = req.get('data').get('children')
+            path = r.get('data').get('children')
             print(path[i].get('data').get('title'))
         return
     except Exception:
