@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kill and restart processes
+
+pkill -HUP gunicorn
